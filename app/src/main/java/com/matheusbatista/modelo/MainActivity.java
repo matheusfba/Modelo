@@ -74,14 +74,6 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_Mapa) {
-            Intent intent = new Intent(this, Mapa.class);
-            intent.putExtra("latitute", -16.678611);
-            intent.putExtra("longitude", -49.253889);
-
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
-
-            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
